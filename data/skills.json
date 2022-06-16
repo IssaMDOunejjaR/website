@@ -1,0 +1,46 @@
+[
+	{
+		"name": "html 5",
+		"img": "/images/skills/html5.svg"
+	},
+	{
+		"name": "css 3",
+		"img": "/images/skills/css3.svg"
+	},
+	{
+		"name": "javascript",
+		"img": "/images/skills/javascript.svg"
+	},
+	{
+		"name": "nodejs",
+		"img": "/images/skills/nodejs.svg"
+	},
+	{
+		"name": "postgresql",
+		"img": "/images/skills/postgresql.svg"
+	},
+	{
+		"name": "react",
+		"img": "/images/skills/react.svg"
+	},
+	{
+		"name": "typescript",
+		"img": "/images/skills/typescript.svg"
+	},
+	{
+		"name": "docker",
+		"img": "/images/skills/docker.svg"
+	},
+	{
+		"name": "expressjs",
+		"img": "/images/skills/expressjs.svg"
+	},
+	{
+		"name": "kubernetes",
+		"img": "/images/skills/kubernetes.svg"
+	},
+	{
+		"name": "nestjs",
+		"img": "/images/skills/nestjs.svg"
+	}
+]

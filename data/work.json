@@ -1,0 +1,28 @@
+[
+	{
+		"title": "Netflix Clone",
+		"github": "https://github.com/IssaMDOunejjaR/netflix-clone",
+		"website": "https://ounejjar-netflix.netlify.app/",
+		"image": "/images/work/netflix.png"
+	},
+	{
+		"title": "Amazon Clone",
+		"website": "https://challenge-c2305.web.app/",
+		"image": "/images/work/amazon.jpg"
+	},
+	{
+		"title": "Web Server",
+		"github": "https://github.com/Rabbitou/Webserver",
+		"image": "/images/work/webserver.png"
+	},
+	{
+		"title": "Planet Fact Site",
+		"website": "https://planet-fact-site-a8ydg47cr-issamdounejjar.vercel.app/neptune",
+		"image": "/images/work/planest.png"
+	},
+	{
+		"title": "Minishell",
+		"github": "https://github.com/IssaMDOunejjaR/minishell",
+		"image": "/images/work/minishell.webp"
+	}
+]
