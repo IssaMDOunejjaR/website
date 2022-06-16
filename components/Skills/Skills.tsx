@@ -50,7 +50,9 @@ export default function SkillsAndTools({ ...restOfProps }) {
 					JavaScript and NodeJs. Also, learning new Frontend and
 					Backend frameworks like React, NextJs, ExpressJs, NestJS.
 					I&apos;m currently having fun learning DevOps too.{' '}
-					<a href="#">Follow my journey here.</a>
+					<a href="https://github.com/IssaMDOunejjaR/devops-roadmap">
+						Follow my journey here.
+					</a>
 				</p>
 			</Info>
 		</Container>
