@@ -9,7 +9,9 @@ export default function Work() {
 				<title>My Work</title>
 			</Head>
 			<AnimatePresence exitBeforeEnter>
-				<div style={{ width: '100%', height: '100%' }}>
+				<div
+					style={{ width: '100%', height: '100%', overflow: 'auto' }}
+				>
 					<MyWork
 						initial={{ x: '-100%' }}
 						animate={{ x: 0 }}
