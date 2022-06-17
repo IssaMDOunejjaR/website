@@ -4,8 +4,9 @@ import styled from 'styled-components';
 export const Container = styled(motion.div)`
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	padding: 4rem;
+	margin: auto 0;
+	/* height: 100%; */
 	width: 100%;
 `;
 

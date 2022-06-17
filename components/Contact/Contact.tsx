@@ -67,7 +67,7 @@ export default function ContactMe({ ...restOfProps }) {
 					type="submit"
 					initial={{ y: 30, opacity: 0 }}
 					whileInView={{ y: 0, opacity: 1 }}
-					transition={{ delay: 1.2 }}
+					transition={{ delay: 1.1 }}
 				>
 					Send Message
 				</FormButton>

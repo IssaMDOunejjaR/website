@@ -4,10 +4,10 @@ import styled from 'styled-components';
 export const Container = styled(motion.div)`
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	padding: 4rem;
-	width: 100%;
+	flex: 1;
 	margin: auto 0;
+	overflow: hidden;
 `;
 
 export const Header = styled(motion.h2)`
@@ -24,6 +24,10 @@ export const Text = styled(motion.p)`
 export const Tools = styled.div`
 	display: flex;
 	flex-wrap: wrap;
+
+	@media (max-width: 799px) {
+		justify-content: center;
+	}
 `;
 
 export const Item = styled(motion.div)`

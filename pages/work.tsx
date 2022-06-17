@@ -1,6 +1,6 @@
 import { AnimatePresence } from 'framer-motion';
 import Head from 'next/head';
-import { Layout, MyWork } from '../components';
+import { MyWork } from '../components';
 
 export default function Work() {
 	return (
@@ -9,14 +9,14 @@ export default function Work() {
 				<title>My Work</title>
 			</Head>
 			<AnimatePresence exitBeforeEnter>
-				<Layout>
+				<div style={{ width: '100%', height: '100%' }}>
 					<MyWork
 						initial={{ x: '-100%' }}
 						animate={{ x: 0 }}
 						exit={{ x: '-100%' }}
 						transition={{ type: 'tween' }}
 					/>
-				</Layout>
+				</div>
 			</AnimatePresence>
 		</>
 	);

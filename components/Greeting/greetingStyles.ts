@@ -44,10 +44,10 @@ export const ScrollIndicator = styled.div`
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	font-size: 18px;
+	font-size: 1rem;
 	text-transform: uppercase;
 	letter-spacing: 3px;
-	padding: 50px;
+	padding: 0.8rem;
 
 	svg {
 		margin-top: 25px;

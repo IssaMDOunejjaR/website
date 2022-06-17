@@ -5,9 +5,10 @@ import { Button } from '../../styles/globalStyles';
 export const Container = styled(motion.div)`
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	margin: auto 0;
 	padding: 4rem;
 	width: 100%;
+	overflow: auto;
 `;
 
 export const Header = styled(motion.h2)`

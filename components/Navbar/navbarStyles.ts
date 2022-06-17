@@ -2,9 +2,9 @@ import styled from 'styled-components';
 
 export const MenuButton = styled.button`
 	position: fixed;
-	top: 20px;
-	right: 20px;
-	background-color: transparent;
+	top: 5px;
+	right: 15px;
+	background-color: ${(props) => props.theme.backgroundColor};
 	border: none;
 	cursor: pointer;
 	display: none;
