@@ -29,6 +29,10 @@ export const Text = styled(motion.p)`
 export const Form = styled.form`
 	display: flex;
 	flex-direction: column;
+
+	@media (min-width: 800px) {
+		width: 70%;
+	}
 `;
 
 export const FormGroup = styled.div`
