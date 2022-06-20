@@ -24,5 +24,11 @@
 		"title": "Minishell",
 		"github": "https://github.com/IssaMDOunejjaR/minishell",
 		"image": "/images/work/minishell.webp"
+	},
+	{
+		"title": "Netflix Clone V2",
+		"github": "https://github.com/IssaMDOunejjaR/netflix-clone-v2",
+		"website": "https://netflix-clone-v2-omega.vercel.app/",
+		"image": "/images/work/netflix.png"
 	}
 ]
