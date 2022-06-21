@@ -30,5 +30,11 @@
 		"github": "https://github.com/IssaMDOunejjaR/netflix-clone-v2",
 		"website": "https://netflix-clone-v2-omega.vercel.app/",
 		"image": "/images/work/netflix.png"
+	},
+	{
+		"title": "Advice Generator",
+		"github": "https://github.com/IssaMDOunejjaR/advice-generator",
+		"website": "https://advice-generator-psi-pink.vercel.app/",
+		"image": "/images/work/advice-generator.jpg"
 	}
 ]
