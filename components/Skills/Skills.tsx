@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import Layout from '../Layout/Layout';
 import { Container, Header, Text, Tools, Item, Info } from './skillsStyles';
 import skills from '../../data/skills.json';
 
