@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import { Button } from '../../styles/globalStyles';
 import { Container, Header, Text, ScrollIndicator } from './greetingStyles';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
@@ -38,7 +37,11 @@ export default function Greeting() {
 			>
 				Full Stack Developer / DevOps
 			</Text>
-			<Link href="contact">
+			<a
+				href="https://drive.google.com/file/d/1PA5bL4g4zQNxbYt2H7nk-b5D1-ry7-Nx/view?usp=sharing"
+				target="_blank"
+				rel="noreferrer"
+			>
 				<Button
 					initial={{ y: -20, opacity: 0 }}
 					whileInView={{ y: 0, opacity: 1 }}
@@ -47,7 +50,7 @@ export default function Greeting() {
 					{'Resume'}
 					<span></span>
 				</Button>
-			</Link>
+			</a>
 			<ScrollIndicator>
 				Scroll <ArrowDownwardIcon />
 			</ScrollIndicator>
