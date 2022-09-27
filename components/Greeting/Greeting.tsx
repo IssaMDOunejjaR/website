@@ -38,7 +38,7 @@ export default function Greeting() {
 				Full Stack Developer / DevOps
 			</Text>
 			<a
-				href="https://drive.google.com/file/d/1PA5bL4g4zQNxbYt2H7nk-b5D1-ry7-Nx/view?usp=sharing"
+				href="https://drive.google.com/file/d/1l6fmOtp23chHn2JEhCmBvfanrUUiBkf2/view?usp=sharing"
 				target="_blank"
 				rel="noreferrer"
 			>
