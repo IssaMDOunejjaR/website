@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	* {
+		@apply text-[#666] dark:text-[#888] font-inter transition-all duration-300;
+	}
+
+	html {
+		@apply scroll-smooth;
+	}
+
+	body {
+		@apply bg-white dark:bg-black scrollbar-track-transparent scrollbar-thumb-black dark:scrollbar-thumb-white scrollbar-thin;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		@apply font-extrabold text-black dark:text-white;
+	}
+
+	button,
+	a {
+		@apply outline-none;
+	}
+
+	button {
+		@apply rounded-md bg-black text-white border-[1px] border-black hover:bg-white hover:text-black dark:bg-white dark:text-black dark:border-white dark:hover:bg-black dark:hover:text-white;
+	}
+}
+
+@layer components {
+	.btn-link {
+		@apply text-black border-[1px] border-black py-3 px-8 font-semibold rounded-md hover:bg-black hover:text-white dark:text-white dark:border-white dark:hover:bg-white dark:hover:text-black;
+	}
+}
+
+@layer utilities {
+	.octagon {
+		clip-path: polygon(
+			30% 0%,
+			70% 0%,
+			100% 30%,
+			100% 70%,
+			70% 100%,
+			30% 100%,
+			0% 70%,
+			0% 30%
+		);
+	}
+
+	.flip {
+		transform: rotateX(180deg) rotateY(180deg);
+	}
+
+	.rotate-y-0 {
+		transform: rotateY(0deg);
+	}
+
+	.rotate-y-180 {
+		transform: rotateY(180deg);
+	}
+
+	.rotate-x-180 {
+		transform: rotateX(180deg);
+	}
+}

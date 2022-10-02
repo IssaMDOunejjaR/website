@@ -1,30 +1,24 @@
 import type { NextPage } from 'next';
-import { Container } from '../styles/globalStyles';
-import {
-	AboutMe,
-	ContactMe,
-	Greeting,
-	MyWork,
-	SkillsAndTools,
-} from '../components';
 import Head from 'next/head';
+import About from '../components/About';
+import Contact from '../components/Contact';
+import Footer from '../components/Footer';
+import Main from '../components/Main';
+import Projects from '../components/Projects';
+import Skills from '../components/Skills';
 
 const Home: NextPage = () => {
 	return (
 		<>
 			<Head>
-				<title>{"Hi, I'm Issam Ounejjar"}</title>
+				<title>Hi, I`m Issam Ounejjar</title>
 			</Head>
-			<Container>
-				<Greeting />
-				<AboutMe />
-				<h2 style={{ fontSize: '3rem', margin: '4rem' }}>
-					Projects i worked on:
-				</h2>
-				<MyWork />
-				<SkillsAndTools />
-				<ContactMe />
-			</Container>
+			<Main />
+			<About />
+			<Skills />
+			<Projects />
+			<Contact />
+			<Footer />
 		</>
 	);
 };
