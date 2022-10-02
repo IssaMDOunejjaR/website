@@ -42,4 +42,5 @@ jobs:
                   password: ${{ secrets.PASSWORD }}
                   script: |
                       cd /home/${{ secrets.USERNAME }}/home-lab
+                      docker compose rm -s -v personnal_site
                       docker compose up -d personnal_site
