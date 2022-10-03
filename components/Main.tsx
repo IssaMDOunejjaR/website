@@ -31,18 +31,18 @@ export default function Main() {
 	};
 
 	return (
-		<main id='home'>
+		<main id="home">
 			<Container>
-				<div className='px-6 py-10'>
+				<div className="px-6 py-10">
 					<motion.h1
-						initial='hidden'
-						whileInView='visible'
+						initial="hidden"
+						whileInView="visible"
 						transition={{
 							delayChildren: 1,
 							staggerChildren: 0.5,
 						}}
 						viewport={{ once: true }}
-						className='flex p-2 flex-col items-center text-center text-6xl md:text-8xl lg:text-[9rem]'
+						className="flex p-2 flex-col items-center text-center text-6xl md:text-8xl lg:text-[9rem]"
 					>
 						<motion.div
 							variants={variant}
@@ -54,7 +54,7 @@ export default function Main() {
 							Hi, I'm
 						</motion.div>
 						<motion.div
-							className='relative p-2 my-4 text-black dark:text-white'
+							className="relative p-2 my-4 text-black dark:text-white"
 							variants={variant}
 						>
 							<span
@@ -78,20 +78,21 @@ export default function Main() {
 						initial={{ y: 100, opacity: 0 }}
 						whileInView={{ y: 0, opacity: 1 }}
 						transition={{ delay: 3 }}
-						className='flex flex-col justify-center items-center mt-12 space-y-4 md:flex-row md:space-y-0 md:space-x-4'
+						viewport={{ once: true }}
+						className="flex flex-col justify-center items-center mt-12 space-y-4 md:flex-row md:space-y-0 md:space-x-4"
 					>
 						<a
-							href='#about'
-							className='btn-link bg-black text-white hover:bg-white hover:text-black dark:bg-white dark:text-black dark:hover:bg-black dark:hover:text-white'
+							href="#about"
+							className="btn-link bg-black text-white hover:bg-white hover:text-black dark:bg-white dark:text-black dark:hover:bg-black dark:hover:text-white"
 						>
 							About Me
 						</a>
 						<a
-							target='_blank'
-							href='https://drive.google.com/file/d/1l6fmOtp23chHn2JEhCmBvfanrUUiBkf2/view'
+							target="_blank"
+							href="https://drive.google.com/file/d/1l6fmOtp23chHn2JEhCmBvfanrUUiBkf2/view"
 							className={`btn-link group p-0.5 border-0 bg-gradient-to-r ${bgClass}`}
 						>
-							<span className='block text-black rounded-md bg-white py-3 px-8 group-hover:text-white group-hover:bg-transparent dark:text-white dark:bg-black dark:group-hover:bg-transparent'>
+							<span className="block text-black rounded-md bg-white py-3 px-8 group-hover:text-white group-hover:bg-transparent dark:text-white dark:bg-black dark:group-hover:bg-transparent">
 								Resume
 							</span>
 						</a>

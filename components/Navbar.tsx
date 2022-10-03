@@ -1,7 +1,5 @@
-// import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import Container from './Container';
-import { DarkModeSwitch } from 'react-toggle-dark-mode';
 import { useTheme } from 'next-themes';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
@@ -11,7 +9,8 @@ import MenuIcon from '@mui/icons-material/Menu';
 import { Drawer, IconButton } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
 import { useRouter } from 'next/router';
-import { Link, animateScroll as scroll } from 'react-scroll';
+import { Link } from 'react-scroll';
+import DarkModeToogle from './DarkModeToogle';
 
 interface NavLinkProps {
 	name: string;
@@ -19,8 +18,6 @@ interface NavLinkProps {
 }
 
 const NavLink = ({ name, close }: NavLinkProps) => {
-	const router = useRouter();
-
 	return (
 		<li>
 			<Link
@@ -163,8 +160,8 @@ export default function Navbar() {
 							<NavLink name="Contact" close={handleCloseMenu} />
 						</ul>
 						<div className="ml-auto flex items-center space-x-4 lg:ml-4">
-							<DarkModeSwitch
-								checked={theme === 'dark'}
+							<DarkModeToogle
+								isDark={theme === 'dark'}
 								onChange={toggleDarkMode}
 							/>
 							<a
