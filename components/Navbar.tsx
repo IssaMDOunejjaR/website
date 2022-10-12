@@ -8,9 +8,18 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import MenuIcon from '@mui/icons-material/Menu';
 import { Drawer, IconButton } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
-import { useRouter } from 'next/router';
 import { Link } from 'react-scroll';
-import DarkModeToogle from './DarkModeToogle';
+import dynamic from 'next/dynamic';
+
+const DarkModeToggle = dynamic(
+	() =>
+		import('react-dark-mode-toggle-2').then(
+			(component) => component.DarkModeToggle,
+		),
+	{
+		ssr: false,
+	},
+);
 
 interface NavLinkProps {
 	name: string;
@@ -160,9 +169,12 @@ export default function Navbar() {
 							<NavLink name="Contact" close={handleCloseMenu} />
 						</ul>
 						<div className="ml-auto flex items-center space-x-4 lg:ml-4">
-							<DarkModeToogle
-								isDark={theme === 'dark'}
+							<DarkModeToggle
 								onChange={toggleDarkMode}
+								isDarkMode={theme === 'dark'}
+								size={50}
+								speed={1.5}
+								className="!bg-transparent"
 							/>
 							<a
 								target="_blank"
