@@ -9,16 +9,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import { Drawer, IconButton } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
 import { Link } from 'react-scroll';
-import dynamic from 'next/dynamic';
-
-const DarkModeToggle = dynamic(
-	import('react-dark-mode-toggle-2').then(
-		(component) => component.DarkModeToggle,
-	),
-	{
-		ssr: false,
-	},
-);
+import { DarkModeToggle } from '@anatoliygatt/dark-mode-toggle';
 
 interface NavLinkProps {
 	name: string;
@@ -169,11 +160,17 @@ export default function Navbar() {
 						</ul>
 						<div className="ml-auto flex items-center space-x-4 lg:ml-4">
 							<DarkModeToggle
+								mode={theme === 'dark' ? 'dark' : 'light'}
+								size="sm"
+								inactiveTrackColor="#e2e8f0"
+								inactiveTrackColorOnHover="#f8fafc"
+								inactiveTrackColorOnActive="#cbd5e1"
+								activeTrackColor="#334155"
+								activeTrackColorOnHover="#1e293b"
+								activeTrackColorOnActive="#0f172a"
+								inactiveThumbColor="#1e293b"
+								activeThumbColor="#e2e8f0"
 								onChange={toggleDarkMode}
-								isDarkMode={theme === 'dark'}
-								size={50}
-								speed={1.5}
-								className="!bg-transparent"
 							/>
 							<a
 								target="_blank"
