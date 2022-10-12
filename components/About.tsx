@@ -1,45 +1,51 @@
 import Container from './Container';
 import SectionHeader from './SectionHeader';
 import VerticalLine from './VerticalLine';
+import { Link } from 'react-scroll';
 
 export default function About() {
 	const gradient = 'from-[#2193b0] to-[#6dd5ed]';
 
 	return (
-		<section id='about' className='p-6 pb-0'>
+		<section id="about" className="p-6 pb-0">
 			<Container>
 				<SectionHeader
-					title='About Me'
+					title="About Me"
 					number={1}
 					gradient={gradient}
 				/>
-				<div className='flex flex-col items-center'>
+				<div className="flex flex-col items-center">
 					<div className={`octagon p-1 bg-gradient-to-r ${gradient}`}>
-						<div className='octagon'>
+						<div className="octagon">
 							<img
-								src='https://cdn.intra.42.fr/users/iounejja.jpg'
-								alt='Issam Ounejjar'
+								src="https://cdn.intra.42.fr/users/iounejja.jpg"
+								alt="Issam Ounejjar"
 							/>
 						</div>
 					</div>
-					<h3 className='text-xl py-4'>Who's this guy?</h3>
-					<VerticalLine height='h-20' gradient={gradient} />
+					<h3 className="text-xl py-4">Who's this guy?</h3>
+					<VerticalLine height="h-20" gradient={gradient} />
 					<div
 						className={`md:w-2/4 bg-gradient-to-r ${gradient} p-0.5 rounded-md`}
 					>
-						<p className='p-4 bg-white rounded-md dark:bg-black'>
+						<p className="p-4 bg-white rounded-md dark:bg-black">
 							I'm a Full Stack Developer located in Casablanca,
 							Morocco. I have a serious passion for everything
 							related to IT and Coding. I love building things
 							that live in the internet. Currently, I'm focused on
 							building Web Applications. Check out some of my work
 							in the{' '}
-							<a
-								href='#projects'
+							<Link
+								activeClass="text-black dark:text-white"
+								to={`projects`}
+								spy={true}
+								smooth={true}
+								offset={-70}
+								duration={0}
 								className={`font-extrabold text-transparent bg-clip-text bg-gradient-to-r ${gradient}`}
 							>
 								Projects
-							</a>{' '}
+							</Link>{' '}
 							section.
 							<br />
 							<br />
@@ -58,15 +64,20 @@ export default function About() {
 							then don't hesitate to contact me.
 							<br />
 							<br />
-							<a
-								href='#contact'
-								className={`font-extrabold text-transparent bg-clip-text bg-gradient-to-r ${gradient}`}
+							<Link
+								activeClass="text-black dark:text-white"
+								to={`contact`}
+								spy={true}
+								smooth={true}
+								offset={-70}
+								duration={0}
+								className={`cursor-pointer font-extrabold text-transparent bg-clip-text bg-gradient-to-r ${gradient}`}
 							>
 								Let's make something !
-							</a>
+							</Link>
 						</p>
 					</div>
-					<VerticalLine height='h-20' gradient={gradient} />
+					<VerticalLine height="h-20" gradient={gradient} />
 				</div>
 			</Container>
 		</section>

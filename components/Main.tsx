@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import Container from './Container';
 import { motion } from 'framer-motion';
+import { Link } from 'react-scroll';
 
 export default function Main() {
 	const [order, setOrder] = useState(0);
@@ -79,12 +80,17 @@ export default function Main() {
 						viewport={{ once: true }}
 						className="flex flex-col justify-center items-center mt-12 space-y-4 md:flex-row md:space-y-0 md:space-x-4"
 					>
-						<a
-							href="#about"
-							className="btn-link bg-black text-white hover:bg-white hover:text-black dark:bg-white dark:text-black dark:hover:bg-black dark:hover:text-white"
+						<Link
+							activeClass="text-black dark:text-white"
+							to={`about`}
+							spy={true}
+							smooth={true}
+							offset={-70}
+							duration={0}
+							className="cursor-pointer btn-link bg-black text-white hover:bg-white hover:text-black dark:bg-white dark:text-black dark:hover:bg-black dark:hover:text-white"
 						>
 							About Me
-						</a>
+						</Link>
 						<a
 							target="_blank"
 							href="https://drive.google.com/file/d/1l6fmOtp23chHn2JEhCmBvfanrUUiBkf2/view"

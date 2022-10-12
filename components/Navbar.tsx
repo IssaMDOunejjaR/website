@@ -8,8 +8,10 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import MenuIcon from '@mui/icons-material/Menu';
 import { Drawer, IconButton } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
-import { Link } from 'react-scroll';
+import Link from 'next/link';
+import { Link as LinkScroll } from 'react-scroll';
 import { DarkModeToggle } from '@anatoliygatt/dark-mode-toggle';
+import { useRouter } from 'next/router';
 
 interface NavLinkProps {
 	name: string;
@@ -19,7 +21,7 @@ interface NavLinkProps {
 const NavLink = ({ name, close }: NavLinkProps) => {
 	return (
 		<li>
-			<Link
+			<LinkScroll
 				activeClass="text-black dark:text-white"
 				to={`${name.toLowerCase()}`}
 				spy={true}
@@ -30,7 +32,7 @@ const NavLink = ({ name, close }: NavLinkProps) => {
 				onClick={close}
 			>
 				{name}
-			</Link>
+			</LinkScroll>
 		</li>
 	);
 };
@@ -40,6 +42,7 @@ export default function Navbar() {
 	const [open, setOpen] = useState(false);
 	const [scrollY, setScrollY] = useState(0);
 	const { theme, setTheme } = useTheme();
+	const { pathname } = useRouter();
 
 	const iconClass = '!text-white';
 
@@ -78,11 +81,32 @@ export default function Navbar() {
 						</IconButton>
 					</div>
 					<ul className="space-y-6 flex flex-col items-center">
-						<NavLink name="Home" close={handleCloseMenu} />
-						<NavLink name="About" close={handleCloseMenu} />
-						<NavLink name="Skills" close={handleCloseMenu} />
-						<NavLink name="Projects" close={handleCloseMenu} />
-						<NavLink name="Contact" close={handleCloseMenu} />
+						{pathname !== '/projects' ? (
+							<>
+								<NavLink name="Home" close={handleCloseMenu} />
+								<NavLink name="About" close={handleCloseMenu} />
+								<NavLink
+									name="Skills"
+									close={handleCloseMenu}
+								/>
+								<NavLink
+									name="Projects"
+									close={handleCloseMenu}
+								/>
+								<NavLink
+									name="Contact"
+									close={handleCloseMenu}
+								/>
+							</>
+						) : (
+							<li>
+								<Link href="/">
+									<a className="cursor-pointer font-semibold transition-all hover:text-black dark:hover:text-white">
+										Home
+									</a>
+								</Link>
+							</li>
+						)}
 					</ul>
 					<div className="flex mt-auto flex-col items-center">
 						<a
@@ -152,11 +176,38 @@ export default function Navbar() {
 							</span>
 						</div>
 						<ul className="space-x-6 ml-auto hidden lg:flex">
-							<NavLink name="Home" close={handleCloseMenu} />
-							<NavLink name="About" close={handleCloseMenu} />
-							<NavLink name="Skills" close={handleCloseMenu} />
-							<NavLink name="Projects" close={handleCloseMenu} />
-							<NavLink name="Contact" close={handleCloseMenu} />
+							{pathname !== '/projects' ? (
+								<>
+									<NavLink
+										name="Home"
+										close={handleCloseMenu}
+									/>
+									<NavLink
+										name="About"
+										close={handleCloseMenu}
+									/>
+									<NavLink
+										name="Skills"
+										close={handleCloseMenu}
+									/>
+									<NavLink
+										name="Projects"
+										close={handleCloseMenu}
+									/>
+									<NavLink
+										name="Contact"
+										close={handleCloseMenu}
+									/>
+								</>
+							) : (
+								<li>
+									<Link href="/">
+										<a className="cursor-pointer font-semibold transition-all hover:text-black dark:hover:text-white">
+											Home
+										</a>
+									</Link>
+								</li>
+							)}
 						</ul>
 						<div className="ml-auto flex items-center space-x-4 lg:ml-4">
 							<DarkModeToggle
@@ -176,7 +227,9 @@ export default function Navbar() {
 								target="_blank"
 								href="https://drive.google.com/file/d/1l6fmOtp23chHn2JEhCmBvfanrUUiBkf2/view"
 								className={`overflow-hidden text-center btn-link py-2 px-0 hidden duration-700 lg:block ${
-									scrollY > 900 ? 'w-24' : 'w-0 p-0'
+									pathname !== '/projects' && scrollY <= 900
+										? 'w-0 p-0'
+										: 'w-24'
 								}`}
 							>
 								Resume

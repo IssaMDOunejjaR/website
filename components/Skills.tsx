@@ -26,7 +26,7 @@ export default function Skills() {
 			startAngle: number,
 			endAngle: number,
 			fillColor: CanvasGradient,
-			strokeColor: CanvasGradient
+			strokeColor: CanvasGradient,
 		) => {
 			if (ctx) {
 				ctx.beginPath();
@@ -38,7 +38,7 @@ export default function Skills() {
 				ctx.stroke();
 			}
 		},
-		[ctx]
+		[ctx],
 	);
 
 	const drawLine = useCallback(
@@ -48,7 +48,7 @@ export default function Skills() {
 			toX: number,
 			toY: number,
 			lineWidth: number,
-			color: CanvasGradient
+			color: CanvasGradient,
 		) => {
 			if (ctx) {
 				ctx.beginPath();
@@ -59,7 +59,7 @@ export default function Skills() {
 				ctx.stroke();
 			}
 		},
-		[ctx]
+		[ctx],
 	);
 
 	const drawItem = useCallback(
@@ -69,7 +69,7 @@ export default function Skills() {
 			widthX: number,
 			widthY: number,
 			radius: number,
-			gradient: CanvasGradient
+			gradient: CanvasGradient,
 		) => {
 			if (canvasRef && canvasRef.current) {
 				const endX = startX + widthX;
@@ -83,7 +83,7 @@ export default function Skills() {
 					0,
 					2 * Math.PI,
 					gradient,
-					gradient
+					gradient,
 				);
 
 				const imgObj = new Image();
@@ -94,7 +94,7 @@ export default function Skills() {
 						endX - radius / 2,
 						endY - radius / 2,
 						radius,
-						radius
+						radius,
 					);
 				};
 
@@ -102,7 +102,7 @@ export default function Skills() {
 				count++;
 			}
 		},
-		[drawCircle, drawLine]
+		[drawCircle, drawLine],
 	);
 
 	useEffect(() => {
@@ -128,7 +128,7 @@ export default function Skills() {
 					canvasWidth / 2 + 0.5,
 					canvasHeight,
 					1.5,
-					gradient
+					gradient,
 				);
 
 				const startPosX = canvasWidth / 2;
@@ -141,7 +141,7 @@ export default function Skills() {
 					250,
 					250,
 					radius,
-					gradient
+					gradient,
 				);
 				drawItem(
 					canvasWidth / 2,
@@ -149,7 +149,7 @@ export default function Skills() {
 					-150,
 					200,
 					radius,
-					gradient
+					gradient,
 				);
 				// drawItem(
 				// 	canvasWidth / 2,
@@ -191,7 +191,7 @@ export default function Skills() {
 					0,
 					2 * Math.PI,
 					gradient,
-					gradient
+					gradient,
 				);
 
 				const imgObj = new Image();
@@ -202,7 +202,7 @@ export default function Skills() {
 						canvasWidth / 2 - radius / 2,
 						canvasHeight / 2 - radius / 2,
 						radius,
-						radius
+						radius,
 					);
 				};
 
@@ -216,7 +216,7 @@ export default function Skills() {
 					0,
 					0,
 					canvasRef.current.width,
-					canvasRef.current.height
+					canvasRef.current.height,
 				);
 			}
 		};
@@ -237,19 +237,19 @@ export default function Skills() {
 	const gradient = 'from-[#ff4e50] to-[#f9d423]';
 
 	return (
-		<section id='skills'>
+		<section id="skills">
 			<Container>
-				<SectionHeader title='Skills' number={2} gradient={gradient} />
-				<p className='text-center mb-8 md:w-2/4 md:mx-auto'>
+				<SectionHeader title="Skills" number={2} gradient={gradient} />
+				<p className="text-center mb-8 md:w-2/4 md:mx-auto">
 					Tools and technologies I use to bring your products to life
 				</p>
-				<div className='flex justify-center'>
-					<VerticalLine height='h-20' gradient={gradient} />
+				<div className="flex justify-center">
+					<VerticalLine height="h-20" gradient={gradient} />
 				</div>
 				{/* <canvas ref={canvasRef} className='w-full'></canvas> */}
-				<img src='/images/skills.png' alt='Tools' />
-				<div className='flex justify-center'>
-					<VerticalLine height='h-20' gradient={gradient} />
+				<img src="/images/skills.png" alt="Tools" />
+				<div className="flex justify-center">
+					<VerticalLine height="h-20" gradient={gradient} />
 				</div>
 			</Container>
 		</section>
