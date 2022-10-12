@@ -33,13 +33,12 @@ export default function Main() {
 	return (
 		<main id="home">
 			<Container>
-				<div className="px-6 py-10">
+				<motion.div className="px-6 py-10">
 					<motion.h1
 						initial="hidden"
 						whileInView="visible"
 						transition={{
-							delayChildren: 1,
-							staggerChildren: 0.5,
+							staggerChildren: 0.2,
 						}}
 						viewport={{ once: true }}
 						className="flex p-2 flex-col items-center text-center text-6xl md:text-8xl lg:text-[9rem]"
@@ -77,7 +76,6 @@ export default function Main() {
 					<motion.div
 						initial={{ y: 100, opacity: 0 }}
 						whileInView={{ y: 0, opacity: 1 }}
-						transition={{ delay: 3 }}
 						viewport={{ once: true }}
 						className="flex flex-col justify-center items-center mt-12 space-y-4 md:flex-row md:space-y-0 md:space-x-4"
 					>
@@ -97,7 +95,7 @@ export default function Main() {
 							</span>
 						</a>
 					</motion.div>
-				</div>
+				</motion.div>
 			</Container>
 		</main>
 	);
