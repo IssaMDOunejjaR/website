@@ -12,10 +12,9 @@ import { Link } from 'react-scroll';
 import dynamic from 'next/dynamic';
 
 const DarkModeToggle = dynamic(
-	() =>
-		import('react-dark-mode-toggle-2').then(
-			(component) => component.DarkModeToggle,
-		),
+	import('react-dark-mode-toggle-2').then(
+		(component) => component.DarkModeToggle,
+	),
 	{
 		ssr: false,
 	},
