@@ -51,7 +51,7 @@ const Project = ({ data, reverse = false }: ProjectProps) => {
 
 	return (
 		<div
-			className={`relative flex flex-col md:flex-row min-h-[350px] ${
+			className={`relative flex flex-col md:flex-row min-h-[500px] ${
 				reverse ? 'flex-row-reverse' : null
 			}`}
 		>
@@ -83,7 +83,7 @@ const Project = ({ data, reverse = false }: ProjectProps) => {
 						<Tech key={index} name={name} />
 					))}
 				</div>
-				<div className="flex-1 space-x-4 p-2">
+				<div className="space-x-4 p-2">
 					<a href={data.website} target="_blank">
 						<OpenInNewIcon />
 					</a>

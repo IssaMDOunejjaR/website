@@ -3,7 +3,7 @@
 		"title": "Space Pong",
 		"website": "https://pong.issamounejjar.live/",
 		"image": "/images/pong.png",
-		"description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+		"description": "Comming Soon...",
 		"technologies": ["Javascript", "ReactJs", "Firebase"]
 	},
 	{
@@ -11,21 +11,21 @@
 		"github": "https://github.com/IssaMDOunejjaR/netflix-clone",
 		"website": "https://ounejjar-netflix.netlify.app/",
 		"image": "/images/netflix-v1.png",
-		"description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+		"description": "Comming Soon...",
 		"technologies": ["Javascript", "ReactJs", "Firebase"]
 	},
 	{
 		"title": "Planet Fact Site",
 		"website": "https://planet-fact-site-a8ydg47cr-issamdounejjar.vercel.app/neptune",
 		"image": "/images/planet.png",
-		"description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+		"description": "Comming Soon...",
 		"technologies": ["NextJs", "Typescript"]
 	},
 	{
 		"title": "Amazon Clone",
 		"website": "https://challenge-c2305.web.app/",
 		"image": "/images/amazon.png",
-		"description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+		"description": "Comming Soon...",
 		"technologies": ["ReactJs", "Javascript", "Firebase"]
 	},
 	{
@@ -33,7 +33,7 @@
 		"website": "https://netflix-clone-v2-omega.vercel.app/",
 		"github": "https://github.com/IssaMDOunejjaR/netflix-clone-v2",
 		"image": "/images/netflix.png",
-		"description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+		"description": "Comming Soon...",
 		"technologies": ["NextJs", "Typescript", "Firebase", "TailwindCSS"]
 	},
 	{
@@ -41,7 +41,7 @@
 		"github": "https://github.com/IssaMDOunejjaR/advice-generator",
 		"website": "https://advice-generator-psi-pink.vercel.app/",
 		"image": "/images/advice-generator.png",
-		"description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+		"description": "Comming Soon...",
 		"technologies": ["NextJs", "Typescript", "TailwindCSS"]
 	}
 ]
