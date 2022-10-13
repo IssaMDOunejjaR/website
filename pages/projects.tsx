@@ -5,6 +5,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import SectionHeader from '../components/SectionHeader';
 import VerticalLine from '../components/VerticalLine';
 import { IconButton, Tooltip } from '@mui/material';
+import { Fragment } from 'react';
 
 interface TechProps {
 	name: string;
@@ -55,7 +56,7 @@ const Project = ({ data, reverse = false }: ProjectProps) => {
 			}`}
 		>
 			<div
-				className={`flex-1 p-[1px] flex justify-center items-center md:absolute -z-10 md:w-2/3 md:h-full ${
+				className={`flex-1 p-[1px] flex justify-center items-center relative md:absolute -z-10 md:w-2/3 md:h-full ${
 					reverse ? 'left-0' : 'right-0'
 				}`}
 			>
@@ -78,8 +79,8 @@ const Project = ({ data, reverse = false }: ProjectProps) => {
 					{data.description}
 				</p>
 				<div className="flex space-x-4 mb-2 px-2">
-					{data.technologies.map((name) => (
-						<Tech name={name} />
+					{data.technologies.map((name, index) => (
+						<Tech key={index} name={name} />
 					))}
 				</div>
 				<div className="flex-1 space-x-4 p-2">
@@ -112,12 +113,12 @@ export default function projects() {
 					<VerticalLine gradient={gradient} height="h-20" />
 				</div>
 				{data.map((p, index) => (
-					<>
+					<Fragment key={index}>
 						<Project data={p} reverse={index % 2 === 0} />
 						<div className="flex justify-center">
 							<VerticalLine gradient={gradient} height="h-28" />
 						</div>
-					</>
+					</Fragment>
 				))}
 			</Container>
 		</section>

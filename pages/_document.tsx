@@ -15,7 +15,6 @@ export default function Document() {
 					type="image/x-icon"
 					href="/images/avatar-rounded.png"
 				></link>
-				<title>Hi, I`m Issam Ounejjar</title>
 			</Head>
 			<body>
 				<Main />
