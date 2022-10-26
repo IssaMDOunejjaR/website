@@ -18,7 +18,7 @@ export default function About() {
 					<div className={`octagon p-1 bg-gradient-to-r ${gradient}`}>
 						<div className="octagon">
 							<img
-								src="https://cdn.intra.42.fr/users/iounejja.jpg"
+								src="https://cdn.intra.42.fr/users/c313acb89f1c9ba0a7cadc92d3c199c3/iounejja.jpg"
 								alt="Issam Ounejjar"
 							/>
 						</div>

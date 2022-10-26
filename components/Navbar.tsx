@@ -167,7 +167,7 @@ export default function Navbar() {
 					<div className="flex items-center">
 						<div className="flex items-center">
 							<img
-								src="https://cdn.intra.42.fr/users/iounejja.jpg"
+								src="https://cdn.intra.42.fr/users/c313acb89f1c9ba0a7cadc92d3c199c3/iounejja.jpg"
 								alt="Issam Ounejjar"
 								className="w-12 h-12 rounded-full p-0.5 border-[2px] border-black dark:border-white"
 							/>
