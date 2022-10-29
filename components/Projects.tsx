@@ -149,13 +149,21 @@ export default function Projects() {
 				</div>
 				<div className="py-[1px]">
 					<Item
+						imgUrl="/images/anime-list.png"
+						imgAlt="Anime List"
+						title="Anime List"
+						description="Comming Soon..."
+						appLink=""
+						githubLink=""
+						reverse
+					/>
+					<Item
 						imgUrl="/images/pong.png"
 						imgAlt="Space Pong"
 						title="Space Pong"
 						description="It's a website where you can create an account and play, chat, compete with other player in a Pong game live. you can also watch other player playing."
 						appLink=""
 						githubLink=""
-						reverse
 					/>
 					<Item
 						imgUrl="/images/netflix.png"
@@ -164,14 +172,6 @@ export default function Projects() {
 						description="It's just a clone to the Netflix platform where you can see the movies and tv shows information."
 						appLink="https://netflix-clone-v2-omega.vercel.app/"
 						githubLink="https://github.com/IssaMDOunejjaR/netflix-clone-v2"
-					/>
-					<Item
-						imgUrl="/images/amazon.png"
-						imgAlt="Amazon"
-						title="Amazon Clone"
-						description="It's just a clone to the Amazon platform where you can create an account and see the products and order them."
-						appLink=""
-						githubLink=""
 						reverse
 					/>
 				</div>

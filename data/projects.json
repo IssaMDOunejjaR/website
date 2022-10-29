@@ -1,5 +1,12 @@
 [
 	{
+		"title": "Anime List",
+		"website": "https://anime-list.issamounejjar.live/",
+		"image": "/images/anime-list.png",
+		"description": "Comming Soon...",
+		"technologies": ["Typescript", "NextJs", "GraphQL", "ExpressJs"]
+	},
+	{
 		"title": "Space Pong",
 		"website": "https://pong.issamounejjar.live/",
 		"image": "/images/pong.png",

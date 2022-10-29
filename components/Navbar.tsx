@@ -41,13 +41,15 @@ export default function Navbar() {
 	const [scrolled, setScrolled] = useState(false);
 	const [open, setOpen] = useState(false);
 	const [scrollY, setScrollY] = useState(0);
-	const { theme, setTheme } = useTheme();
+	const { theme, setTheme, systemTheme } = useTheme();
 	const { pathname } = useRouter();
+
+	const currentTheme = theme === 'system' ? systemTheme : theme;
 
 	const iconClass = '!text-white';
 
 	const toggleDarkMode = () => {
-		setTheme(theme === 'dark' ? 'light' : 'dark');
+		setTheme(currentTheme === 'dark' ? 'light' : 'dark');
 	};
 
 	const handleCloseMenu = () => {
@@ -111,7 +113,7 @@ export default function Navbar() {
 					<div className="flex mt-auto flex-col items-center">
 						<a
 							target="_blank"
-							href="https://drive.google.com/file/d/1l6fmOtp23chHn2JEhCmBvfanrUUiBkf2/view"
+							href="/resume.pdf"
 							className="btn-link py-2"
 						>
 							Resume
@@ -211,7 +213,9 @@ export default function Navbar() {
 						</ul>
 						<div className="ml-auto flex items-center space-x-4 lg:ml-4">
 							<DarkModeToggle
-								mode={theme === 'dark' ? 'dark' : 'light'}
+								mode={
+									currentTheme === 'dark' ? 'dark' : 'light'
+								}
 								size="sm"
 								inactiveTrackColor="#e2e8f0"
 								inactiveTrackColorOnHover="#f8fafc"
@@ -225,7 +229,7 @@ export default function Navbar() {
 							/>
 							<a
 								target="_blank"
-								href="https://drive.google.com/file/d/1l6fmOtp23chHn2JEhCmBvfanrUUiBkf2/view"
+								href="/resume.pdf"
 								className={`overflow-hidden text-center btn-link py-2 px-0 hidden duration-700 lg:block ${
 									pathname !== '/projects' && scrollY <= 900
 										? 'w-0 p-0'

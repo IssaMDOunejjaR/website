@@ -93,7 +93,7 @@ export default function Main() {
 						</Link>
 						<a
 							target="_blank"
-							href="https://drive.google.com/file/d/1l6fmOtp23chHn2JEhCmBvfanrUUiBkf2/view"
+							href="/resume.pdf"
 							className={`btn-link group p-0.5 border-0 bg-gradient-to-r ${bgClass}`}
 						>
 							<span className="block text-black rounded-md bg-white py-3 px-8 group-hover:text-white group-hover:bg-transparent dark:text-white dark:bg-black dark:group-hover:bg-transparent">
