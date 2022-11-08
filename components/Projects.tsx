@@ -3,6 +3,8 @@ import Link from 'next/link';
 import Container from './Container';
 import SectionHeader from './SectionHeader';
 import VerticalLine from './VerticalLine';
+import OpenInNewIcon from '@mui/icons-material/OpenInNew';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 interface ItemProps {
 	reverse?: boolean;
@@ -10,8 +12,8 @@ interface ItemProps {
 	imgAlt: string;
 	title: string;
 	description: string;
-	appLink: string;
-	githubLink: string;
+	appLink?: string;
+	githubLink?: string;
 }
 
 const Item = ({
@@ -79,20 +81,32 @@ const Item = ({
 				</div>
 				<motion.div
 					initial={{
-						x: !reverse ? -400 : 400,
+						x: !reverse ? -200 : 200,
 						opacity: 0,
 						zIndex: -10,
 					}}
 					whileInView={{ x: 0, opacity: 1 }}
 					viewport={{ once: true }}
 					transition={{ ease: 'linear' }}
-					className="rounded-md flex-1 flex md:items-center"
+					className="rounded-md flex-1 flex !z-[1] md:items-center"
 				>
 					<div className="md:w-3/4 md:mx-auto text-center p-6">
 						<h3 className="w-full text-xl md:text-2xl mb-6">
 							{title}
 						</h3>
-						<p className="">{description}</p>
+						<p>{description}</p>
+						<span className="flex justify-center gap-4 py-4">
+							{appLink && (
+								<a href={appLink} target="_blank">
+									<OpenInNewIcon />
+								</a>
+							)}
+							{githubLink && (
+								<a href={githubLink} target="_blank">
+									<GitHubIcon />
+								</a>
+							)}
+						</span>
 					</div>
 				</motion.div>
 			</div>
@@ -152,9 +166,8 @@ export default function Projects() {
 						imgUrl="/images/anime-list.png"
 						imgAlt="Anime List"
 						title="Anime List"
-						description="Comming Soon..."
-						appLink=""
-						githubLink=""
+						description="Anime List is a website where you can see the latest updates about animes."
+						appLink="https://anime-list.issamounejjar.live/"
 						reverse
 					/>
 					<Item
@@ -162,16 +175,14 @@ export default function Projects() {
 						imgAlt="Space Pong"
 						title="Space Pong"
 						description="It's a website where you can create an account and play, chat, compete with other player in a Pong game live. you can also watch other player playing."
-						appLink=""
-						githubLink=""
+						appLink="https://pong.issamounejjar.live/"
 					/>
 					<Item
-						imgUrl="/images/netflix.png"
-						imgAlt="Netflix"
-						title="Netflix Clone"
-						description="It's just a clone to the Netflix platform where you can see the movies and tv shows information."
-						appLink="https://netflix-clone-v2-omega.vercel.app/"
-						githubLink="https://github.com/IssaMDOunejjaR/netflix-clone-v2"
+						imgUrl="/images/avax.png"
+						imgAlt="Avax"
+						title="Avax NFT Game"
+						description="It's an NFT card game where you connect with your decentralized wallet and play card game with other users."
+						appLink="https://avax.issamounejjar.live/"
 						reverse
 					/>
 				</div>

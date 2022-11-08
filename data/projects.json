@@ -3,15 +3,42 @@
 		"title": "Anime List",
 		"website": "https://anime-list.issamounejjar.live/",
 		"image": "/images/anime-list.png",
-		"description": "Comming Soon...",
+		"description": "Anime List is a website where you can see the latest updates about animes.",
 		"technologies": ["Typescript", "NextJs", "GraphQL", "ExpressJs"]
 	},
 	{
 		"title": "Space Pong",
 		"website": "https://pong.issamounejjar.live/",
 		"image": "/images/pong.png",
-		"description": "Comming Soon...",
+		"description": "It's a website where you can create an account and play, chat, compete with other player in a Pong game live. you can also watch other player playing.",
 		"technologies": ["Javascript", "ReactJs", "Firebase"]
+	},
+	{
+		"title": "Avax NFT Game",
+		"website": "https://avax.issamounejjar.live/",
+		"image": "/images/avax.png",
+		"description": "It's an NFT card game where you connect with your decentralized wallet and play card game with other users.",
+		"technologies": [
+			"Javascript",
+			"ReactJs",
+			"TailwindCSS",
+			"Blockchain",
+			"Web3",
+			"Solidity"
+		]
+	},
+	{
+		"title": "Uniswap Clone",
+		"website": "https://uniswap-clone.issamounejjar.live/",
+		"image": "/images/uniswap.png",
+		"description": "A mini platform where you can test swapping coins.",
+		"technologies": [
+			"Javascript",
+			"ReactJs",
+			"TailwindCSS",
+			"Blockchain",
+			"Web3"
+		]
 	},
 	{
 		"title": "Netflix Clone",

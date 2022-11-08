@@ -4,7 +4,7 @@ import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import SectionHeader from '../components/SectionHeader';
 import VerticalLine from '../components/VerticalLine';
-import { IconButton, Tooltip } from '@mui/material';
+import { Tooltip } from '@mui/material';
 import { Fragment } from 'react';
 
 interface TechProps {
@@ -18,7 +18,11 @@ const Tech = ({ name }: TechProps) => {
 				src={`/images/icons/${name.toLowerCase()}.svg`}
 				alt={name}
 				className={`w-7 h-7 ${
-					name === 'NextJs' ? 'dark:invert' : null
+					name.toLowerCase() === 'nextjs' ||
+					name.toLowerCase() === 'blockchain' ||
+					name.toLowerCase() === 'solidity'
+						? 'dark:invert'
+						: null
 				}`}
 			/>
 		</Tooltip>
