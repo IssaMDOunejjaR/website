@@ -9,7 +9,7 @@ pipeline {
                 }
             }
 
-            stage {
+            steps {
                 npm i && npm run build
             }
         }
