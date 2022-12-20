@@ -10,7 +10,17 @@ pipeline {
             }
 
             steps {
-                sh 'npm i && npm run build && npm run start'
+                sh 'npm i && npm run build'
+            }
+        }
+
+        stage('Deploy') {
+            steps {
+                sh '''
+                    docker compose stop
+                    docker compose rm 
+                    docker compose up -d
+                '''
             }
         }
     }
