@@ -11,3 +11,7 @@ services:
         - "traefik.http.routers.personnal_site.entrypoints=websecure"
         - "traefik.http.routers.personnal_site.tls.certresolver=letsencrypt"
       restart: unless-stopped
+
+networks:
+  homelab:
+    external: true
