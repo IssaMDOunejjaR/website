@@ -1,15 +1,15 @@
 version: "3.9"
 services:
-  personnal_site:
+  personal_site:
       container_name: personal_site
       image: iounejja/node:16.13.1-alpine
       networks:
         - home_lab
       labels:
         - "traefik.enable=true"
-        - "traefik.http.routers.personnal_site.rule=Host(`personal.issamounejjar.live`)"
-        - "traefik.http.routers.personnal_site.entrypoints=websecure"
-        - "traefik.http.routers.personnal_site.tls.certresolver=letsencrypt"
+        - "traefik.http.routers.personal_site.rule=Host(`personal.issamounejjar.live`)"
+        - "traefik.http.routers.personal_site.entrypoints=websecure"
+        - "traefik.http.routers.personal_site.tls.certresolver=letsencrypt"
       restart: unless-stopped
 
 networks:
