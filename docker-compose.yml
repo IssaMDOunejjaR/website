@@ -13,5 +13,5 @@ services:
       restart: unless-stopped
 
 networks:
-  homelab:
+  home_lab:
     external: true
