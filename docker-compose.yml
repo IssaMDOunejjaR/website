@@ -3,6 +3,8 @@ services:
   personal_site:
       container_name: personal_site
       image: custom-node-alpine
+      volumes:
+        - ./:/var/www/
       networks:
         - homelab
       labels:
