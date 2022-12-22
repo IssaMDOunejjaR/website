@@ -4,7 +4,7 @@ services:
       container_name: personal_site
       image: custom-node-alpine
       networks:
-        - home_lab
+        - homelab
       labels:
         - "traefik.enable=true"
         - "traefik.http.routers.personal_site.rule=Host(`personal.issamounejjar.live`)"
@@ -13,5 +13,5 @@ services:
       restart: unless-stopped
 
 networks:
-  home_lab:
+  homelab:
     external: true
