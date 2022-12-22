@@ -2,7 +2,7 @@ version: "3.9"
 services:
   personal_site:
       container_name: personal_site
-      image: iounejja/node:16.13.1-alpine
+      image: custom-node-alpine
       networks:
         - home_lab
       labels:
