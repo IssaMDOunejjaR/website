@@ -14,6 +14,20 @@
 		"technologies": ["Javascript", "ReactJs", "Firebase"]
 	},
 	{
+		"title": "Crowdfunding",
+		"website": "https://crowdfunding.issamounejjar.live/",
+		"image": "/images/crowdfunding.png",
+		"description": "Comming Soon...",
+		"technologies": [
+			"ReactJs",
+			"Typescript",
+			"TailwindCSS",
+			"Blockchain",
+			"Web3",
+			"Solidity"
+		]
+	},
+	{
 		"title": "Avax NFT Game",
 		"website": "https://avax.issamounejjar.live/",
 		"image": "/images/avax.png",
@@ -54,6 +68,20 @@
 		"image": "/images/planet.png",
 		"description": "Comming Soon...",
 		"technologies": ["NextJs", "Typescript"]
+	},
+	{
+		"title": "Bank Modern",
+		"website": "https://bank-modern.issamounejjar.live/",
+		"image": "/images/bank-modern.png",
+		"description": "Comming Soon...",
+		"technologies": ["ReactJs", "Typescript", "TailwindCSS"]
+	},
+	{
+		"title": "Metaversus",
+		"website": "https://metaversus.issamounejjar.live/",
+		"image": "/images/metaversus.png",
+		"description": "Comming Soon...",
+		"technologies": ["NextJs", "TailwindCSS"]
 	},
 	{
 		"title": "Amazon Clone",
