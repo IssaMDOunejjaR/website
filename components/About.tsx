@@ -15,14 +15,15 @@ export default function About() {
 					gradient={gradient}
 				/>
 				<div className="flex flex-col items-center">
-					<div className={`octagon p-1 bg-gradient-to-r ${gradient}`}>
-						<div className="octagon">
-							<img
-								src="https://cdn.intra.42.fr/users/c313acb89f1c9ba0a7cadc92d3c199c3/iounejja.jpg"
-								alt="Issam Ounejjar"
-							/>
-						</div>
-					</div>
+					{/* <div className={`octagon p-1 bg-gradient-to-r ${gradient}`}>
+						<div className="octagon"> */}
+					<img
+						src="/images/avatar-no-bg.png"
+						alt="Issam Ounejjar"
+						className="w-[400px] h-[430px] object-cover"
+					/>
+					{/* </div>
+					</div> */}
 					<h3 className="text-xl py-4">Who's this guy?</h3>
 					<VerticalLine height="h-20" gradient={gradient} />
 					<div

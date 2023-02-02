@@ -13,7 +13,7 @@ export default function Document() {
 				<link
 					rel="icon"
 					type="image/x-icon"
-					href="/images/avatar-rounded.png"
+					href="/images/favicon.ico"
 				></link>
 			</Head>
 			<body>
